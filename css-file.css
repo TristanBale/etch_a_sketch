@@ -11,6 +11,27 @@ div {
     color: lavender;
 }
 
+.window {
+    display: flex;
+    min-height: 100%;
+    background-color: black;
+}
+
+.imageContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#fillerText_to_position_reo {
+    color: black;
+    background-color: black;
+    margin-top: 30px;
+}
+
 .normalBtn,
 .rainbowBtn,
 .eraserBtn,
@@ -25,9 +46,6 @@ div {
 }
 
 .btn {
-    color: lavender;
-    background-color: darkblue;
-    border: 1px solid gold;
     padding: 3px;
     border-radius: 5px;
 }
@@ -56,7 +74,6 @@ div {
     color: black;
     transition: all .3s ease-in-out;
 }
-
 
 .normalBtn:hover {
     transform: scale(1.1);
@@ -105,7 +122,7 @@ div {
     width: 130px;
 }
 
-.window {
+.mainBodyContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,17 +130,22 @@ div {
     border: 3px solid black;
     background-color: black;
     height: 100%;
+    flex: auto;
 }
 
 .modeSelection,
 .buttonContainer {
-   background-color: skyblue; 
+   background-color: grey; 
    text-align: center;
    margin-bottom: 8px;
    margin-top: 3px;
    border: 0px solid blue;
    border-radius: 10px;
    padding: 5px;
+}
+
+.buttonContainer {
+    padding: 3px;
 }
 
 .mainContainer {
