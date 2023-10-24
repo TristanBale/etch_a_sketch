@@ -2,6 +2,15 @@ div {
     border: 2px solid black;
 }
 
+#sizeValue {
+    color: white;
+}
+
+#sizeSlider {
+    background-color: lavender;
+    color: lavender;
+}
+
 .normalBtn,
 .rainbowBtn,
 .eraserBtn,
@@ -10,13 +19,23 @@ div {
 .clearBtn,
 .btn {
     margin: 7px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.btn {
+    color: lavender;
+    background-color: darkblue;
+    border: 1px solid gold;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .clearBtn{
     background-color: black;
     color: white;
+    transition: all .3s ease-in-out;
 }
 
 .rainbowBtn {
@@ -35,6 +54,36 @@ div {
         rgba(255, 0, 0, 1) 100%
     );
     color: black;
+    transition: all .3s ease-in-out;
+}
+
+
+.normalBtn:hover {
+    transform: scale(1.1);
+}
+
+.rainbowBtn:hover {
+    transform: scale(1.1);
+}
+
+.eraserBtn:hover {
+    transform: scale(1.1);
+}
+
+.vanishBtn:hover {
+    transform: scale(1.1);
+}
+
+.permanentBtn:hover {
+    transform: scale(1.1);
+}
+
+.clearBtn:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .topDisplayHolder,
@@ -62,6 +111,8 @@ div {
     align-items: center;
     padding: 5px;
     border: 3px solid black;
+    background-color: black;
+    height: 100%;
 }
 
 .modeSelection,
@@ -72,6 +123,7 @@ div {
    margin-top: 3px;
    border: 0px solid blue;
    border-radius: 10px;
+   padding: 5px;
 }
 
 .mainContainer {
@@ -79,11 +131,11 @@ div {
     flex-direction: column;
     box-sizing: border-box;
     flex-wrap: wrap;
-    border: 1px solid black;
-    background-color: white;
+    border: 2px solid gold;
+    background-color: black;
     padding: 0px;
-    width: 650px;
-    height: 650px;
+    width: 620px;
+    height: 620px;
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -99,15 +151,16 @@ div {
 .gridDiv {
     aspect-ratio: 1/1; 
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(185, 198, 211);
     flex: auto;
     border-radius: 2.5px;
 }
 
 #colorPicker {
-   padding: 0px;
+   padding: 1px;
    width: 80px;
    height: 80px;
    border: 0px solid black;
-   border-radius: 20px;
+   border-radius: 5px;
+   margin: 5px;
 }

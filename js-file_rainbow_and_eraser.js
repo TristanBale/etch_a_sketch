@@ -2,6 +2,9 @@ let currentMode = 'normal';
 let trailStyle = 'vanish';
 let color = 'black';
 
+//const sizeValue = document.querySelector('#sizeValue');
+//const sizeSlider = document.querySelector('#sizeSlider');
+
 const mainContainer = document.querySelector('.mainContainer');
 
 const btn = document.querySelector('.btn');
@@ -18,43 +21,43 @@ const colorDisplayer = document.querySelector('.colorDisplayer');
 
 normalBtn.addEventListener('click', () => {
     currentMode = 'normal';
-    modeDisplayer.innerText = 'Current mode: normal';
+    modeDisplayer.innerHTML = '<span style="font-weight: 700;"> Current mode: </span> normal';
 })
 
 rainbowBtn.addEventListener('click', () => {
     currentMode = 'rainbow';
-    modeDisplayer.innerText = 'Current mode: rainbow';
+    modeDisplayer.innerHTML = '<span style="font-weight: 700;"> Current mode: </span> rainbow';
 });
 
 eraserBtn.addEventListener('click', () => {
     currentMode = 'eraser';
-    modeDisplayer.innerText = 'Current mode: eraser';
+    modeDisplayer.innerHTML = '<span style="font-weight: 700;"> Current mode: </span> eraser';
 });
 
 vanishBtn.addEventListener('click', () => {
     trailStyle = 'vanish';
-    trailDisplayer.innerText = 'Trail mode: vanish';
+    trailDisplayer.innerHTML = '<span style="font-weight: 700;"> Trail mode: </span> vanish';
 });
 
 permanentBtn.addEventListener('click', () => {
     trailStyle = 'permanent';
-    trailDisplayer.innerText = 'Trail mode: permanent'
+    trailDisplayer.innerHTML = '<span style="font-weight: 700;"> Trail mode: </span> permanent';
 });
 
 clearBtn.addEventListener('click', () => {
-    arrayOfDivs = create2D_Array(10,10);
+    arrayOfDivs = create2D_Array(userInput,userInput);
     create_Divs(arrayOfDivs);
 })
 
 colorPicker.addEventListener('input', () => {
     color = colorPicker.value;
-    colorDisplayer.innerText = `Colour: ${color}`;
+    colorDisplayer.innerHTML = `<span style="font-weight: 700;"> Colour: </span> ${color}`;
 });
 
 let arrayOfDivs = [];
 let userInput = '';
 
-arrayOfDivs = create2D_Array(10,10);
+arrayOfDivs = create2D_Array(16,16);
 create_Divs(arrayOfDivs);
 
 
