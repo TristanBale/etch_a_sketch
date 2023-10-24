@@ -7,10 +7,16 @@ div {
 .eraserBtn,
 .vanishBtn,
 .permanentBtn,
+.clearBtn,
 .btn {
     margin: 7px;
     font-size: 18px;
     border-radius: 8px;
+}
+
+.clearBtn{
+    background-color: black;
+    color: white;
 }
 
 .rainbowBtn {

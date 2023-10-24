@@ -10,6 +10,7 @@ const rainbowBtn = document.querySelector('.rainbowBtn');
 const eraserBtn = document.querySelector('.eraserBtn');
 const vanishBtn = document.querySelector('.vanishBtn');
 const permanentBtn = document.querySelector('.permanentBtn');
+const clearBtn = document.querySelector('.clearBtn');
 const colorPicker = document.querySelector('#colorPicker');
 const modeDisplayer = document.querySelector('.modeDisplayer');
 const trailDisplayer = document.querySelector('.trailDisplayer');
@@ -40,9 +41,14 @@ permanentBtn.addEventListener('click', () => {
     trailDisplayer.innerText = 'Trail mode: permanent'
 });
 
+clearBtn.addEventListener('click', () => {
+    arrayOfDivs = create2D_Array(10,10);
+    create_Divs(arrayOfDivs);
+})
+
 colorPicker.addEventListener('input', () => {
     color = colorPicker.value;
-    colorDisplayer.innerText = `Color: ${color}`;
+    colorDisplayer.innerText = `Colour: ${color}`;
 });
 
 let arrayOfDivs = [];
@@ -50,6 +56,7 @@ let userInput = '';
 
 arrayOfDivs = create2D_Array(10,10);
 create_Divs(arrayOfDivs);
+
 
 btn.addEventListener('click', () => {
     userInput = prompt('Please choose how many squares per side for the grid: ');
