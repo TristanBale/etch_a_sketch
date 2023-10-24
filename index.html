@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
-    <script src="./js-file.js" defer></script>
+    <script src="./js-file_rainbow_and_eraser.js" defer></script>
     <link rel="stylesheet" href="./css-file.css">
 </head>
 
@@ -14,6 +14,19 @@
             <button class="btn">Press to change number of grids</button>
         </div>
         <div class="mainContainer"></div>
+        <div class="modeSelection">
+            <button class="normalBtn">Normal</button>
+            <button class="rainbowBtn">Rainbow mode</button>
+            <button class="eraserBtn">Eraser</button>
+            <button class="vanishBtn">Vanish mode</button>
+            <button class="permanentBtn">Permanent mode</button>
+        </div>
+        <div class="topDisplayHolder">
+            <div class="modeDisplayer">Current mode: normal</div>
+            <div class="trailDisplayer">Trail mode: vanish</div>
+        </div>
+        <input id="colorPicker" type="color" value="#333333" />
+        <div class="colorDisplayer">Color: #333333</div>
     </div> 
 </body>
 </html>

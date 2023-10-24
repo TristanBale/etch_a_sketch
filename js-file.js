@@ -1,5 +1,3 @@
-//step 1: make a 16 x 16 grid of divs
-    //make a 2D array of 16 by 16 places
 const mainContainer = document.querySelector('.mainContainer');
 
 const btn = document.querySelector('.btn');
@@ -20,9 +18,6 @@ btn.addEventListener('click', () => {
     }
 });
 
-//console.log(`user input is ${userInput}`);
-
-
 function create2D_Array(rows, columns) {
     let array = [];
     let value = 0;
@@ -34,8 +29,6 @@ function create2D_Array(rows, columns) {
     } 
     return array;
  }
-
-//arrayOfDivs = create2D_Array(userInput, userInput);
 
 function create_Divs(array) {
     mainContainer.innerHTML = ''; //this is done here and not the other functions as the rest handles creating the arrays. only create_divs actually appends and edit the HTML
@@ -53,7 +46,6 @@ function create_Divs(array) {
     }
 
     const gridDivNodeList = document.querySelectorAll('.gridDiv');
-
 
     for (let i = 0; i < gridDivNodeList.length; i++) {
         gridDivNodeList[i].addEventListener('mouseover', () => {
