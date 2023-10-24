@@ -95,11 +95,22 @@ function create_Divs(array) {
         mainContainer.appendChild(innerDivContainer);
     }
 
+    let isMouseDown = false; // Flag to track mouse button state
+
+    document.addEventListener('mousedown', () => {
+        isMouseDown = true;
+    });
+
+    document.addEventListener('mouseup', () => {
+        isMouseDown = false;
+    });
+
     const gridDivNodeList = document.querySelectorAll('.gridDiv');
 
 
     for (let i = 0; i < gridDivNodeList.length; i++) {
-        gridDivNodeList[i].addEventListener('mouseover', () => {
+        gridDivNodeList[i].addEventListener('mousemove', () => {
+        if (isMouseDown) {
             if (currentMode === 'normal') {
                 gridDivNodeList[i].setAttribute('style', `background-color: ${color};`);
             } else if (currentMode === 'eraser') {
@@ -110,7 +121,9 @@ function create_Divs(array) {
                 const randomB = Math.floor(Math.random() * 256);
                 gridDivNodeList[i].style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
             }
+        }
         });
+    
         if (trailStyle === 'vanish') {
             gridDivNodeList[i].addEventListener('mouseout', handleMouseOut);
         }
@@ -127,6 +140,10 @@ function handleMouseOut() {
         }, 300);
     }
 }
+
+
+
+
 
 
 
