@@ -41,7 +41,7 @@ div {
 .innerDivContainer {
     display: flex;
    /* border: 2px solid red; */
-    background-color: orange;
+    background-color: white;
     flex: auto;
     min-width: 200px;
 }
