@@ -150,14 +150,3 @@ function handleMouseOut() {
         }, 300);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
