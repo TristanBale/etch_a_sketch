@@ -1,0 +1,51 @@
+div {
+    border: 2px solid black;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid cyan;
+    background-color: blue;
+    padding: 5px;
+    width: auto;
+    height: 100vh;
+    aspect-ratio: 1/1;
+}
+
+.innerDivContainer {
+    display: flex;
+   /* border: 2px solid red; */
+    background-color: orange;
+    flex: auto;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+.gridDiv {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1/1; 
+    display: flex;
+    background-color: lavender;
+    border: 2px solid purple;
+    justify-content: center;
+    flex: auto;
+}
+
+#hover {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-color: black;
+    border: 2px solid purple;
+    justify-content: center;
+    margin: 5px;
+    flex: 1;
+}
