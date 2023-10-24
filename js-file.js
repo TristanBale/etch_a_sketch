@@ -10,13 +10,13 @@ let userInput = '';
 btn.addEventListener('click', () => {
     userInput = prompt('Please choose how many squares per side for the grid: ');
     userInput = +userInput;
-    if (typeof userInput === 'number') {
+    if (typeof userInput === 'number' && userInput < 51 && userInput > 0)  {
         arrayOfDivs = create2D_Array(userInput,userInput);
         console.log(arrayOfDivs);
         create_Divs(arrayOfDivs);
     }
     else {
-        alert('Please key in numbers only');
+        alert('Please key in numbers from 1 to 50 only');
     }
 });
 
