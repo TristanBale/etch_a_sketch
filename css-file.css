@@ -13,7 +13,7 @@ div {
 
 .window {
     display: flex;
-    min-height: 100%;
+    height: 97vh;
     background-color: black;
 }
 
@@ -23,7 +23,7 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 400px;
 }
 
 #fillerText_to_position_reo {
@@ -40,7 +40,7 @@ div {
 .clearBtn,
 .btn {
     margin: 7px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 8px;
     transition: all .3s ease-in-out;
 }
@@ -129,7 +129,6 @@ div {
     padding: 5px;
     border: 3px solid black;
     background-color: black;
-    height: 100%;
     flex: auto;
 }
 
@@ -141,11 +140,11 @@ div {
    margin-top: 3px;
    border: 0px solid blue;
    border-radius: 10px;
-   padding: 5px;
+   padding: 0px;
 }
 
 .buttonContainer {
-    padding: 3px;
+    padding: 0px;
 }
 
 .mainContainer {
@@ -156,8 +155,8 @@ div {
     border: 2px solid gold;
     background-color: black;
     padding: 0px;
-    width: 610px;
-    height: 610px;
+    min-width: 450px;
+    min-height: 450px;
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -180,8 +179,8 @@ div {
 
 #colorPicker {
    padding: 1px;
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 70px;
    border: 0px solid black;
    border-radius: 5px;
    margin: 5px;
